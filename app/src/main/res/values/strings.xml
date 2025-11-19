@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Tollywood Quiz</string>
+
+    <!-- Main Activity -->
+    <string name="start_game">START GAME</string>
+    <string name="app_title">Tollywood Quiz</string>
+    <string name="app_subtitle">Voice-Activated Movie Game</string>
+
+    <!-- Setup Activity -->
+    <string name="team_setup">Team Setup</string>
+    <string name="team1_label">Team 1 Name</string>
+    <string name="team2_label">Team 2 Name</string>
+    <string name="team1_hint">Enter Team 1 Name</string>
+    <string name="team2_hint">Enter Team 2 Name</string>
+    <string name="winning_score_label">Winning Score</string>
+    <string name="winning_score_hint">Enter Score (e.g., 20)</string>
+    <string name="continue_btn">CONTINUE</string>
+
+    <!-- Category Activity -->
+    <string name="select_category">Select Category</string>
+    <string name="before_2000">🎬 Movies Before 2000</string>
+    <string name="after_2000">🎥 Movies After 2000</string>
+
+    <!-- Game Activity -->
+    <string name="category_label">Category</string>
+    <string name="instruction_text">Say: "bro [movie name]"</string>
+    <string name="correct_answer">✅ Correct!</string>
+    <string name="wrong_answer">❌ Wrong movie!</string>
+    <string name="already_used">❌ Already used!</string>
+
+    <!-- Result Activity -->
+    <string name="game_over">Game Over!</string>
+    <string name="wins">Wins!</string>
+    <string name="final_scores">Final Scores</string>
+    <string name="play_again">PLAY AGAIN</string>
+
+    <!-- Permissions -->
+    <string name="microphone_permission_required">Microphone permission is required for voice recognition!</string>
+
+    <!-- Errors -->
+    <string name="enter_team1_name">Enter Team 1 name</string>
+    <string name="enter_team2_name">Enter Team 2 name</string>
+    <string name="enter_winning_score">Enter winning score</string>
+    <string name="select_category_error">Please select a category</string>
+    <string name="valid_score_error">Enter a valid score (minimum 5)</string>
+</resources>

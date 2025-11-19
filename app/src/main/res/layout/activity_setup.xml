@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a1a2e"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvSetupTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team Setup"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tvTeam1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 1 Name"
+        android:textSize="16sp"
+        android:textColor="#87CEEB"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvSetupTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/etTeam1"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter Team 1 Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam1Label"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvTeam2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team 2 Name"
+        android:textSize="16sp"
+        android:textColor="#87CEEB"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etTeam1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/etTeam2"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter Team 2 Name"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/tvTeam2Label"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Winning Score"
+        android:textSize="16sp"
+        android:textColor="#87CEEB"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etTeam2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/etWinningScore"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Enter Score (e.g., 20)"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#888888"
+        android:background="@drawable/edittext_bg"
+        android:padding="16dp"
+        android:inputType="number"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@id/tvScoreLabel"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CONTINUE"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FFD700"
+        android:textColor="#1a1a2e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.Quizz">
+
+<!--        <activity-->
+<!--            android:name=".utils.DialogueDatabase"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".models.Dialogue"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".DialogueGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ImageGuessActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GuessHeroActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Main Activity - Launch Screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Setup Activity - Team Names -->
+        <activity
+            android:name=".SetupActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Category Activity - Select Movie Category -->
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Game Activity - Main Game Screen -->
+        <activity
+            android:name=".GameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Result Activity - Winner Screen -->
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Song Game Activity - Guess by Song -->
+        <activity
+            android:name=".SongGameActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- Hero Movie Activity - Guess Hero's Movies -->
+        <activity
+            android:name=".HeroMovieActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
